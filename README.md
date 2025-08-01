@@ -1,7 +1,7 @@
 # review manager app
 
 Простое приложение на fastapi для управления отзывами. Автоматически помечает отзывы как негативные, позитивные или нейтральные. Структура проекта:
-```
+```bash
 .
 ├── app.py
 ├── crud
@@ -21,8 +21,7 @@
 ```
 
 ## Запуск:
-```
-bash
+```bash
 python3 -m venv env
 source ./env/bin/activate
 python3 -m pip install fastapi aiosqlite uvicorn # или python3 -m pip install -r requirements.txt
