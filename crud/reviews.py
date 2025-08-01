@@ -7,7 +7,7 @@ async def create_review(
     db: Connection
 ):
     cursor = await db.execute(
-        "insert into reviews (text, sentiment, created_at) values (?,?,?) RETURNING *",
+        "INSERT INTO reviews (text, sentiment, created_at) VALUES (?,?,?) RETURNING *",
         [review.text, review.sentiment.value, review.created_at],
     )
 
